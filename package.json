@@ -1,0 +1,14 @@
+{
+  "name": "todo-api",
+  "version": "1.0.0",
+  "description": "Node Todos API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "y.ouattara@nts-solution.net",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^3.0.6"
+  }
+}

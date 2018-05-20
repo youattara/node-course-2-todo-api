@@ -9,7 +9,7 @@ var {User}  = require('./model/users.js');
 //app
 var app = express();
 
-//middle-ware
+//middle-ware body parser
 app.use(bodyParser.json());
 
 //post
@@ -22,7 +22,7 @@ app.post('/todos', (req, res) => {
   todo.save().then((doc) =>{
    res.send(doc);
   }, (e) => {
-   res.send(400).send(e);
+   res.sendStatus(400).send(e);
  });
 })
 
@@ -30,3 +30,7 @@ app.post('/todos', (req, res) => {
 app.listen(3000, () => {
   console.log('App Started on port 3000');
 });
+
+module.exports = {
+  app
+};

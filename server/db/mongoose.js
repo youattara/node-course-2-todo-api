@@ -4,6 +4,6 @@ mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost:27017/Todo');
 
 //export
-exports.module = {
+module.exports = {
   mongoose
 };
